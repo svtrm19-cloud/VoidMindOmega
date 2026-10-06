@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><body><script>
+var store = {
+  userName:"Void User",xp:2500,streak:5,lastActiveDate:"2026-10-06",
+  onboardingCompleted:true,levelUpPending:false,prevLevel:2,dailyBonusGiven:"",
+  missions:[],achievements:[
+    {id:"first_journal",name:"Primeiro Registro",description:"teste",color:"cyan",unlocked:true},
+    {id:"first_mission",name:"Primeira Missão",description:"teste",color:"green",unlocked:false},
+    {id:"streak_7",name:"7 Dias",description:"teste",color:"orange",unlocked:false},
+    {id:"journals_50",name:"50 Registros",description:"teste",color:"blue",unlocked:false},
+    {id:"level_10",name:"Nível 10",description:"teste",color:"purple",unlocked:false},
+    {id:"xp_1000",name:"1000 XP",description:"teste",color:"pink",unlocked:true}
+  ],
+  xpEvents:[
+    {id:"e1",timestamp:1728223200000,date:"2026-10-06",amount:25,reason:"Registro no Diário"},
+    {id:"e2",timestamp:1728219600000,date:"2026-10-06",amount:25,reason:"Registro no Diário"}
+  ],
+  journal:[
+    {id:"j1",title:"Estudos de JavaScript",content:"Hoje aprendi sobre promises e async/await. Foi muito produtivo!",timestamp:1728223200000,emotion:"Alegria",intensity:85,category:"Estudos",humor:"Bem"},
+    {id:"j2",title:"Projeto React",content:"Trabalhei no projeto React hoje, foco total no componente de filtros.",timestamp:1728136800000,emotion:"Contemplação",intensity:82,category:"Estudos",humor:"Normal"},
+    {id:"j3",title:"Reflexão do dia",content:"Estou me sentindo cansado mas determinado a continuar evoluindo.",timestamp:1728050400000,emotion:"Melancolia",intensity:65,category:"Reflexões",humor:"Cansado"},
+    {id:"j4",title:"Ideia para app",content:"Tive uma ideia incrível para um novo aplicativo mobile.",timestamp:1727964000000,emotion:"Alegria",intensity:90,category:"Ideias",humor:"Excelente"},
+    {id:"j5",content:"Reunião de trabalho importante hoje. Muitos projetos novos chegando.",timestamp:1727877600000,emotion:"Ansiedade",intensity:70,category:"Trabalho",humor:"Ansioso"},
+    {id:"j6",title:"Meditação matinal",content:"Mediei por 20 minutos hoje cedo. Sensação de paz e tranquilidade.",timestamp:1727791200000,emotion:"Serenidade",intensity:95,category:"Reflexões",humor:"Excelente"},
+    {id:"j7",title:"Pensamentos noturnos",content:"Não consigo parar de pensar nos meus objetivos e no futuro.",timestamp:1727704800000,emotion:"Contemplação",intensity:78,category:"Pensamentos",humor:"Normal"}
+  ]
+};
+localStorage.setItem('voidmind_store_v2', JSON.stringify(store));
+localStorage.setItem('voidmind_prefs', JSON.stringify({accent:"void",fontSize:"normal"}));
+location.href = 'http://localhost:5180/journal';
+</script></body></html>

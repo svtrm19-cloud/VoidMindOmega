@@ -1,0 +1,43 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap');
+
+/*
+ * PREFERÊNCIAS DO USUÁRIO — Variáveis CSS
+ *
+ * Estas variáveis são definidas via JavaScript (PreferencesStore.tsx)
+ * usando localStorage.getItem() ao abrir a página.
+ *
+ * Valores padrão (usados quando nenhuma preferência foi salva):
+ */
+:root {
+  --neon-a: 139 92 246;   /* roxo — tema VOID (padrão) */
+  --neon-b: 59 130 246;   /* azul  — tema VOID (padrão) */
+}
+
+/*
+ * TEMA NEURAL (ciano)
+ * Ativado quando data-accent="neural" está no <html>
+ */
+[data-accent="neural"] .void-glow-a  { background-color: rgb(6 182 212 / 0.12) !important; }
+[data-accent="neural"] .void-glow-b  { background-color: rgb(59 130 246 / 0.12) !important; }
+[data-accent="neural"] .void-border  { border-color: rgb(6 182 212 / 0.3) !important; }
+
+/*
+ * TEMA OMEGA (rosa)
+ * Ativado quando data-accent="omega" está no <html>
+ */
+[data-accent="omega"]  .void-glow-a  { background-color: rgb(236 72 153 / 0.12) !important; }
+[data-accent="omega"]  .void-glow-b  { background-color: rgb(168 85 247 / 0.12) !important; }
+[data-accent="omega"]  .void-border  { border-color: rgb(236 72 153 / 0.3) !important; }
+
+/*
+ * TEMA VOID (roxo) — padrão, sem classes especiais necessárias
+ */
+[data-accent="void"]   .void-glow-a  { background-color: rgb(139 92 246 / 0.12) !important; }
+[data-accent="void"]   .void-glow-b  { background-color: rgb(59 130 246 / 0.12) !important; }
+[data-accent="void"]   .void-border  { border-color: rgb(139 92 246 / 0.3) !important; }
+
+/* Nav active indicator muda com o tema */
+[data-accent="neural"] .nav-active   { color: rgb(6 182 212) !important; }
+[data-accent="omega"]  .nav-active   { color: rgb(236 72 153) !important; }
+[data-accent="void"]   .nav-active   { color: rgb(139 92 246) !important; }

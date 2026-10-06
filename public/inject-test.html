@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  var store = {"userName":"Void User","xp":1350,"journal":[{"id":"1","content":"Hoje me sinto focado e em evolução.","timestamp":1726404000000,"emotion":"Contemplação","intensity":82}],"missions":[{"id":"m1","name":"Estudar 1h","category":"Educação","frequency":"daily","completedDates":["2026-09-15"],"xpReward":50,"createdAt":1726400000000},{"id":"m2","name":"Meditar","category":"Mental","frequency":"daily","completedDates":[],"xpReward":30,"createdAt":1726400000001}],"achievements":[{"id":"first_journal","name":"Primeiro Registro","description":"Fez o primeiro registro","color":"cyan","unlocked":true},{"id":"first_mission","name":"Primeira Missão","description":"Completou a primeira missão","color":"green","unlocked":true},{"id":"streak_7","name":"7 Dias","description":"7 dias","color":"orange","unlocked":false},{"id":"journals_50","name":"50 Registros","description":"50 registros","color":"blue","unlocked":false},{"id":"level_10","name":"Nível 10","description":"Nível 10","color":"purple","unlocked":false},{"id":"xp_1000","name":"1000 XP","description":"1000 XP","color":"pink","unlocked":true}],"xpEvents":[{"id":"e1","timestamp":1726404000000,"date":"2026-09-15","amount":25,"reason":"Registro no Diário"},{"id":"e2","timestamp":1726404001000,"date":"2026-09-15","amount":50,"reason":"Missão: Estudar 1h"}],"streak":3,"lastActiveDate":"2026-09-15","onboardingCompleted":true,"levelUpPending":false,"prevLevel":1,"dailyBonusGiven":""};
+  var prefs = {"accent":"neural","fontSize":"large"};
+  localStorage.setItem('voidmind_store_v2', JSON.stringify(store));
+  localStorage.setItem('voidmind_prefs', JSON.stringify(prefs));
+  location.href = '/settings';
+</script>
+</body>
+</html>
