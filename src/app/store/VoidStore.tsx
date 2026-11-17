@@ -146,6 +146,7 @@ function checkAchievements(state: VoidState): Achievement[] {
 
 export type VoidAction =
   | { type: "COMPLETE_ONBOARDING" }
+  | { type: "REOPEN_ONBOARDING" }
   | { type: "ADD_JOURNAL_ENTRY"; payload: JournalEntry }
   | { type: "DELETE_JOURNAL_ENTRY"; payload: string }
   | { type: "ADD_MISSION"; payload: Mission }
