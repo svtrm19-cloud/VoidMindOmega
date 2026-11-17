@@ -42,9 +42,8 @@ export function SettingsPage() {
   };
 
   const handleReviewOnboarding = () => {
-    dispatch({ type: "RESET_ALL_DATA" });
-  };
-
+  dispatch({ type: "REOPEN_ONBOARDING" });
+};
   return (
     <div className="min-h-screen">
       {/* Header */}
