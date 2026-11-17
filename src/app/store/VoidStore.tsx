@@ -181,6 +181,8 @@ function voidReducer(state: VoidState, action: VoidAction): VoidState {
   switch (action.type) {
     case "COMPLETE_ONBOARDING":
       return { ...state, onboardingCompleted: true };
+      case "REOPEN_ONBOARDING":
+  return { ...state, onboardingCompleted: false };
 
     case "ADD_JOURNAL_ENTRY": {
       const newJournal = [action.payload, ...state.journal];
